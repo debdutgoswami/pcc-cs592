@@ -7,6 +7,8 @@
 # Efg 5 70
 # one extra blank line is needed at the end
 
+# bash grade.sh input
+
 clear
 rm g1
 printf "Name \t Roll \t Marks \t Grade\n" >>g1
@@ -36,3 +38,5 @@ if [ -f $file1 ]; then
         printf "$1 \t $2 \t\t $3 \t $grade\n" >>g1
     done
 fi
+cat $file1
+cat g1
