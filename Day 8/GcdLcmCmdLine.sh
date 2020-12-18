@@ -28,10 +28,13 @@ for i in $*; do
     j=$(expr $j + 1)
 done
 g=${a[1]}
+l=${a[1]}
 for ((i = 2; i <= count; i++)); do
     g="$(gcd ${a[i]} $g)"
+    l=$(expr \( ${a[i]} \* $l \) / $g)
     if [ $g -eq 1 ]; then
         break
     fi
 done
 echo "GCD: $g"
+echo "LCM: $l"
