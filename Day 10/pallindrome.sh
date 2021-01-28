@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# THIS IS A COMPLICATED METHOD
 # Read a txt file as an input and select the pallindrome words from the text
 # and store the palindrome words into another file (omit '.' Or ',' after the word)
 
