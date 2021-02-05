@@ -23,7 +23,7 @@ int main() {
         printf("parent's child pid: %d\n", pid);
         printf("parent process id: %d\n", getpid());
         printf("parent parent process id: %d\n", getppid());
-        a++;
+        a--;
         printf("parent a = %d\n", a);
         printf("parent address of a = %d\n", &a);
 
